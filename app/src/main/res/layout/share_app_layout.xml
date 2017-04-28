@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green_answer_right"
+        android:text="推 荐 消 谣"
+        android:textSize="22sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/et_share_app"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#EDEDED"
+        android:gravity="center_horizontal"
+        android:clickable="false"
+        android:hint="目前仅支持微信分享推荐\n\n感谢你的推荐"
+        android:padding="10dp"
+        android:textSize="16sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/green_answer_right"
+        android:id="@+id/bt_share_app"
+        android:textSize="22sp"
+        android:text="前 往 推 荐"
+        android:textColor="@android:color/white"
+        android:layout_margin="15dp"
+        />
+
+</LinearLayout>

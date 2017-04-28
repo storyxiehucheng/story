@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:gravity="top"
+        android:background="#EDEDED"
+        android:id="@+id/et_dialog_comments"
+        android:hint="写点评论吧..."
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@color/green_answer_right"
+        android:id="@+id/bt_dialog_comments"
+        android:textSize="18sp"
+        android:text="提交评论"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        />
+</LinearLayout>

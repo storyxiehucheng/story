@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green_answer_right"
+        android:text="应 用 更 新"
+        android:textSize="22sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_updateInfo_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EDEDED"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:text="版本更新说明："
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/green_answer_right"
+            android:textSize="18sp"
+            android:text="下 次 再 说"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/bt_update_cancel"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/green_answer_right"
+            android:textSize="18sp"
+            android:text="前 往 下 载"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="15dp"
+            android:id="@+id/bt_update_ok"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="false"
+    android:id="@+id/analysis_layout"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/grid"
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/analysis_appbarLayout"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:id="@+id/analysis_collapsing"
+            app:contentScrim="@color/my_white"
+            app:elevation="0dp"
+            app:expandedTitleGravity="bottom|center_horizontal"
+            app:collapsedTitleGravity="start"
+            app:statusBarScrim="@color/my_white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.5"
+                android:background="@drawable/listview_picture_admin"
+                android:fitsSystemWindows="false"
+                android:id="@+id/iv_analysis_picture"
+                />
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="消谣"
+                android:id="@+id/analysis_toolbar"
+                app:layout_collapseMode="pin"
+                >
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include layout="@layout/analysis_content" />
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/analysis_bottomNavigation"
+        android:background="@android:color/white"
+        >
+        <include layout="@layout/bottom_button"/>
+    </android.support.design.widget.BottomNavigationView>
+</android.support.design.widget.CoordinatorLayout>
