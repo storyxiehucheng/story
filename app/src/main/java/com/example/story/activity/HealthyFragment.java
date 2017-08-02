@@ -245,6 +245,7 @@ public class HealthyFragment extends Fragment {
                 View view=LayoutInflater.from(parent.getContext()).inflate(R.layout.pull_up_refresh,parent,false);
                 return new FooterViewHolderBase(view);
             }
+
             return null;
         }
 
